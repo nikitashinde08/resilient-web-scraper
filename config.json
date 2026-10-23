@@ -1,0 +1,14 @@
+{
+  "start_url": "https://quotes.toscrape.com/js/page/{}/",
+  "robots_url": "https://quotes.toscrape.com/robots.txt",
+  "max_pages": 3,
+  "delay_range_seconds": [1, 3],
+  "max_retries": 3,
+  "output_file": "quotes.csv",
+  "selectors": {
+    "item":   ["div.quote", "div[class*='quote']"],
+    "text":   ["span.text", ".text"],
+    "author": ["small.author", ".author"],
+    "tags":   ["a.tag", ".tags a"]
+  }
+}
